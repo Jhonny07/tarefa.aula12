@@ -5,27 +5,36 @@ public class Empregado extends Pessoa{
     private double imposto;
 
 //fazer os métodos gets e sets 
-public void setcodigoSetor(String codigoSetor){
+//set
+public void setcodigoSetor(int codigoSetor){
     this.codigoSetor=codigoSetor;
 } 
 // get
-public String getcodigoSetor(){
+public int getcodigoSetor(){
     return this.codigoSetor;
 }
 //set
-public void setcodigoSetor(String codigoSetor){
-    this.codigoSetor=codigoSetor;
+public void setsalarioBase(double salarioBase){
+    this.salarioBase=salarioBase;
 }
 //get 
-public String getTelefone(){
-    return this.endereco;
+public double getsalarioBase(){
+    return this.salarioBase;
 }
 //set
-public void setEndereco(String endereco){
-    this.endereco=endereco;
+public void setimposto(double imposto){
+    this.imposto=imposto;
 }
 //get 
-public String getEndereco(){
-    return this.endereco;
+public double getimposto(){
+     return this.imposto;
+}
+
+public double calcularSalario(){
+    double salarioLiquido=0;
+    salarioLiquido=this.salarioBase-this.imposto;
+    //cálculo do salário líquido   
+    return salarioLiquido;
+
 }
 }
