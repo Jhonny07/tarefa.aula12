@@ -17,7 +17,7 @@ public void setTelefone(String telefone){
 }
 //get 
 public String getTelefone(){
-    return this.endereco;
+    return this.telefone;
 }
 //set
 public void setEndereco(String endereco){
